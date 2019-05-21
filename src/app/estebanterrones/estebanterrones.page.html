@@ -20,7 +20,89 @@
 </ion-header>
 
 <ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/mhw.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Combate contra monstruos gigantescos en escenarios épicos.</ion-card-subtitle>
+      <ion-card-title>PRESENTACIÓN</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+          Tu tarea es aceptar misiones de caza de monstruos en una gran variedad de hábitats.
+          Abátelos y recibe materiales que podrás utilizar para crear armas y armaduras más poderosas con las que enfrentarte a monstruos aún más peligrosos.
+          
+          Monster Hunter: World es la última entrega de la serie.
+          En ella podrás disfrutar de la mejor experiencia de juego, utilizando todos los recursos a tu alcance para acechar monstruos en un nuevo mundo rebosante de emociones y sorpresas.</p>
+    </ion-card-content>
+  </ion-card>
 
+  <ion-card class="welcome-card">
+      <ion-img src="/assets/mhw2.png"></ion-img>
+      <ion-card-header>
+        <ion-card-title>HISTORIA</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+            Cada década, los dragones ancianos cruzan el mar hasta el continente conocido como el Nuevo Mundo, en un fenómeno conocido como la migración de los Ancianos.
+
+            Para llegar hasta el fondo de este fenómeno misterioso, el gremio ha creado la comisión de investigación y la ha enviado en grandes flotas hacia el Nuevo Mundo.
+            
+            Ha llegado el momento de que la 5.ª flota zarpe siguiendo a Zorah Magdaros, un dragón anciano de proporciones gigantescas.
+            En dicha flota, un cazador está a punto de embarcarse en el viaje más grande que jamás haya podido imaginar.
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-grid>
+        <ion-row>
+            <ion-radio-group [(ngModel)]="mhw">
+            <ion-col size="12">
+                <ion-item>
+                    <ion-label>01 Bosque Primigenio</ion-label>
+                    <ion-radio slot="start" value="Una vasta zona forestal en la que se basa un complejo ecosistema.
+                    Un entramado de árboles gigantescos que llegan a acariciar el cielo, y entre ellos un árbol milenario que se alza sobre todos los demás." name="Bosque" ></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col size="12">
+                  <ion-item>
+                      <ion-label>02 Yerno de Agujas</ion-label>
+                      <ion-radio slot="start" value="Una gran extensión de tierra yerma junto a las lagunas hasta las que fluye el agua del Bosque Primigenio.
+                      Está lleno de colonias de hormigas que sobresalen de la tierra como agujas gigantescas,
+                      y cuenta también con rica vegetación alrededor de los humedales.
+                      
+                      En esta zona encontrarás criaturas que aprovechan la coexistencia única de estos dos ecosistemas." name="Yerno" ></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label>03 Altiplano Coralinos</ion-label>
+                        <ion-radio slot="start" value="Un misterioso altiplano con un ecosistema que se asemeja al del océano, con corrientes y mareas.
+                        Las corrientes ascendientes arrastran los huevos del coral y los esparcen por todo el Nuevo Mundo,
+                        convirtiéndose así en parte de la cadena alimenticia." name="Altiplano" ></ion-radio>
+                      </ion-item>
+                  </ion-col>
+                  <ion-col size="12">
+                      <ion-item>
+                          <ion-label>04 Valle Putrefacto</ion-label>
+                          <ion-radio slot="start" value="Un profundo valle que se halla bajo los Altiplanos Coralinos.
+                          Los cuerpos en descomposición de monstruos muertos caen al valle desde las alturas,
+                          creando una capa de restos putrefactos que cumple una función ecológica muy importante.
+                          En el valle también se halla una bacteria única conocida como el efluvio, que es capaz de devorar la materia orgánica." name="Valle" ></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label>05 Lecho de los ancianos</ion-label>
+                            <ion-radio slot="start" value="El Lecho de los Ancianos es un territorio inexplorado rebosante de una energía poderosísima.
+                            Su geografía la dominan una serie de misteriosas estructuras cristalinas de gran tamaño, pero en ella también hallarás peligrosas cavernas con magma, que en algunos casos se ha enfriado hasta formar tramos irregulares de basalto." name="Lecho" ></ion-radio>
+                          </ion-item>
+                      </ion-col>
+
+</ion-radio-group>
+<ion-col size="12">
+<ion-button expand="full" color=light  (click)="verSelecion()" style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Ver Contenido </ion-button>
+</ion-col>
+        </ion-row>
+    </ion-grid>
 
 
     <ion-button expand="full" color=light (click)="paginas()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
